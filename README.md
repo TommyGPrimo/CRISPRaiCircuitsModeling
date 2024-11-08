@@ -9,4 +9,7 @@ Biomolecular interactions are hard to predict in CRISPRai-based genetic circuits
 - Functional Specification: Document contains background of package, problem being addressed, user profile and use cases
 - Component Specification: Document contains software components, high level description of data and provisions, interactions to accomplish the use cases and preliminary plan
 
+## srcs
+The source folder contains the main code for running this package, including unit tests and helper python scripts
+
 
