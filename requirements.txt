@@ -1,0 +1,3 @@
+tellurium - biochemical modeling
+pandas - data management
+numpy - numerical manipulation and data manipulation
