@@ -7,6 +7,9 @@ In order to build large-scale genetic circuits for biological design towards des
 2. Having a tool for plotting I/O responses, allows for easier experimental design
 3. understanding the modulation effects of CRISPRai-machinery allows for selecting the proper promoters for controlling their expression
 
+### Tool
+The tool runs a biochemical model of gRNA interactions with CRISPRai machinery, and plots the response of experimental inputs towards their target gene output.
+
 ## User profile
 The target users are researchers and bioengineers who are involved in building genetic circuits, specifically CRISPR-based genetic circuits with an emphasis on CRISPRai.
 The users include undergraduates, graduates, research technicians, post-docs, principal investigators, scientists, and even hobbyists without lab access
