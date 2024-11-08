@@ -1,14 +1,21 @@
 # Functional specification
 
 ## Background
-CRISPR-based activation and interference (CRISPRai) allows us to regulate metabolism by up-regulating and down-regulating gene expression based on guide-RNA (gRNA) targeting.
-In order to build large-scale genetic circuits, understanding and modeling the effects of multiple gRNA interactions is important.
+CRISPR-based activation and interference (CRISPRai) allows bioengineers to regulate metabolism by up-regulating and down-regulating gene expression based on guide-RNA (gRNA) targeting.
+In order to build large-scale genetic circuits for biological design towards desired phenotypical responses:
+1. understanding and modeling the effects of multiple gRNA interactions is important for predictability
+2. Having a tool for plotting I/O responses, allows for easier experimental design
+3. understanding the modulation effects of CRISPRai-machinery allows for selecting the proper promoters for controlling their expression
 
 ## User profile
-The package is usable by researchers and bioengineers in the space of CRISPR-based genetic circuits.
-- User understands and can program in python
-- User understands basic CRISPR-based activation and interference technology
-- User udnerstands basic principles of genetic circuits
+The target users are researchers and bioengineers who are involved in building genetic circuits, specifically CRISPR-based genetic circuits with an emphasis on CRISPRai.
+The users include undergraduates, graduates, research technicians, post-docs, principal investigators, scientists, and even hobbyists without lab access
+
+### Skills and Access
+- User should have a basic understanding of python
+- User should have a basic understanding of python pckage installation such as `pip install`
+- User should have a basic understanding of basic [CRISPR-based activation and interference technology](https://www.synthego.com/guide/crispr-methods/crispri-crispra)
+- User should have a basic [Principles of genetic circuits](https://www.nature.com/articles/nmeth.2926)
 
 ## Usecases
 1. The user intends to understand the expression of their target gene based on the number of gRNA competitors in the system
