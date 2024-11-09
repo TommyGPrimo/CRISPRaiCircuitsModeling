@@ -3,6 +3,7 @@
 
 # Import functions
 import logging
+import pdb
 
 # List the names of all modules used for working with package, version
 __all__ = ["crisprai_model_test"]
