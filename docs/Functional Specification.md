@@ -18,7 +18,7 @@ The users include undergraduates, graduates, research technicians, post-docs, pr
 - User should have a basic understanding of python
 - User should have a basic understanding of python pckage installation such as `pip install`
 - User should have a basic understanding of basic [CRISPR-based activation and interference technology](https://www.synthego.com/guide/crispr-methods/crispri-crispra)
-- User should have a basic [Principles of genetic circuits](https://www.nature.com/articles/nmeth.2926)
+- User should have a basic understanding of [Principles of genetic circuits](https://www.nature.com/articles/nmeth.2926)
 
 ## Usecases
 1. The user intends to understand the expression of their target gene based on the number of gRNA competitors in the system
