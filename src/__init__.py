@@ -8,7 +8,7 @@ import pdb
 # List the names of all modules used for working with package, version
 __all__ = ["crisprai_model_test"]
 __version__ = "1.0.0"
-__name__ = "CRISPRai_Genetic_Circuits_Model"
+__name__ = "__main__"
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
