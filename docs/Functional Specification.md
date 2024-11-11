@@ -21,10 +21,13 @@ The users include undergraduates, graduates, research technicians, post-docs, pr
 - User should have a basic understanding of basic [CRISPR-based activation and interference technology](https://www.synthego.com/guide/crispr-methods/crispri-crispra)
 - User should have a basic understanding of [Principles of genetic circuits](https://www.nature.com/articles/nmeth.2926)
 
-## Usecases
+### Usecases
 1. The user intends to understand the expression of their target gene based on the number of gRNA competitors in the system
 2. The user intends to understand the expression of their target gene based on regulating the expression of CRISPRai machinery, primarily dCas9 and Activator-protein
 
-## Expectation
+### Expectation
 1. The user should expect an I/O plot describing the expression of target gene based on changing the expression of their CRISPRai machinery
 2. The user should expect the I/O plot to change depending when changing different parameters to understand underlying circuit changes.
+
+# Getting Started - TODO: Finish this section and answer Joseph on issues
+This section covers getting started with the tool and user interaction

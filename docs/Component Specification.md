@@ -38,6 +38,18 @@ This section contains software component specification for displaying data, mana
         - value: the number of gene targets
     - Output:
         - None
+6. `cai.changeInputResponseRange(responseRange)`
+    - Change input response range function to vary the concentration of the inducer range by inputing an array
+    - Arguments:
+        - A two element array defining the lower bound and upper bound of the inducer concentration
+    - Output:
+        - None
+7. `extractSteadStateValues()`
+    - Helper function that is called when generating the I/O tellurium plots.
+    - Arguments:
+        - None
+    - Output:
+        - Steady state values for response output with changing input
 
 
 ## Interactions
