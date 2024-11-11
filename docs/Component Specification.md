@@ -15,6 +15,8 @@ This section contains software component specification for displaying data, mana
         - Activator concentration: the concentration of the MCP-SoxS protein complex. default is 1
     - Output:
         - None
+    - **Note**:
+        - *Setting Activator to 0 would change the entire circuitry into a CRISPRi-only genetic circuit biochemical model*
 2. `cai.checkGeneticCircuitComponents()`
     - Displays the parameter values for all the genetic circuit components.
         - CRISPRai machinery
