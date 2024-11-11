@@ -1,5 +1,5 @@
 # CRISPRaiCircuitsModeling
-Package for modeling CRISPRai large scale genetic circuits and visualizing.
+Package for modeling CRISPRai large scale genetic circuits and visualizing I/O responses for experimental perturbations
 
 # Overview
 Biomolecular interactions are hard to predict in CRISPRai-based genetic circuits due to resource management, and the indirect effect of gRNAs on each other. This reduces predictability of designing large genetic circuit
@@ -8,6 +8,7 @@ Biomolecular interactions are hard to predict in CRISPRai-based genetic circuits
 ## Docs
 - Functional Specification: Document contains background of package, problem being addressed, user profile and use cases
 - Component Specification: Document contains software components, high level description of data and provisions, interactions to accomplish the use cases and preliminary plan
+- Biochemical Equations: Document contains the biochemical equations used to structure the CRISPRai genetic circuits.
 
 ## srcs
 The source folder contains the main code for running this package, including unit tests and helper python scripts
