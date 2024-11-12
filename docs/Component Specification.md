@@ -46,7 +46,7 @@ This section contains software component specification for displaying data, mana
         - A two element array defining the lower bound and upper bound of the inducer concentration
     - Output:
         - None
-7. `extractSteadStateValues()`
+7. `extractSteadyStateValues()`
     - Helper function that is called when generating the I/O tellurium plots.
     - Arguments:
         - None
