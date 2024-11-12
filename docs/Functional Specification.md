@@ -29,7 +29,7 @@ The users include undergraduates, graduates, research technicians, post-docs, pr
 1. The user should expect an I/O plot describing the expression of target gene based on changing the expression of their CRISPRai machinery
 2. The user should expect the I/O plot to change depending when changing different parameters to understand underlying circuit changes.
 
-# Getting Started - TODO: Finish this section and answer Joseph on issues
+# Getting Started
 *The package is best used in through a Jupyter notebook*
 1. Install the CRISPRai genetic circuits python package by `pip install crisrai_model`
 2. Import the package using `import crisprai_model as cai`
