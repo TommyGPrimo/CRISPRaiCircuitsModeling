@@ -11,7 +11,16 @@ class crisprai_model:
     
     global CRISPRai_modality_one
     
-    CRISPRai_modality_one = """
+    def __init__(self):
+        print("Module built")
+    
+    def checkModalityOneGeneticCircuit():
+        """ checkGeneticCircuitComponents
+        - Prints out the values of the CRISPRai components including genetic circuit components for review by the user
+        - Returns: The model data of the biochemical model
+        """
+        
+        CRISPRai_modality_one = """
         # CRISPRa Modality 1 - dCas9 tethered to activator model
         
         # Specify chemical reactions
@@ -32,20 +41,19 @@ class crisprai_model:
         ki_2 = 2;
         li_1 = 1;
         li_2 = 2;
+        
         kappa = 1;
         gam = 1;
         del = 1;
+        """
         
-        """
-    
-    def __init__(self):
-        print("Module built")
-    
-    def checkGeneticCircuitComponents():
-        """ checkGeneticCircuitComponents
-        - Prints out the values of the CRISPRai components including genetic circuit components for review by the user
-        """
-        return "Checking Genetic circuit components"
+        rr = te.loada(CRISPRai_modality_one)
+        model_data = rr.simulate(0,10,200)
+        rr.plot(title="CRISPRa Modality I Model", xlabel= "Time (sec)", ylabel= "Concentration")
+        return model_data
+        
+    def defineModalityTwoGeneticCircuit():
+        pass
 
     def simulateGeneticCircuits():
         """ simulateGeneticCircuits
