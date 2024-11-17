@@ -13,7 +13,7 @@ class crisprai_model:
         """ checkGeneticCircuitComponents
         - Prints out the values of the CRISPRai components including genetic circuit components for review by the user
         """
-        print("Checking Genetic circuit components")
+        return "Checking Genetic circuit components"
 
     def simulateGeneticCircuits():
         """ simulateGeneticCircuits
@@ -29,7 +29,7 @@ class crisprai_model:
             Activator (int, optional): MCP-SoxS protein complex concentration. Defaults to 1.
             args: Array for K values that influence machinery concentration
         """
-        print("Changing machinery concentration")
+        return "Changing machinery concentration"
 
     def setCompetitorCircuits(value=1):
         """setCompetitorCircuits

@@ -32,7 +32,8 @@ The users include undergraduates, graduates, research technicians, post-docs, pr
 # Getting Started
 *The package is best used in through a Jupyter notebook*
 1. Install the CRISPRai genetic circuits python package by `pip install crisrai_model`
-2. Import the package using `import crisprai_model as cai`
+2. Import the package using `from crisprai_model import crisprai_model as cai`
+3. Initialize the instance: `cai_genetic_circuit = cai()`
 3. Run the model object `cai.checkGeneticCircuitComponents()` to see the default CRISPRai genetic circuit components and parameter values
 4. Run the default model using `cai.simulateGeneticCircuit()`
 
