@@ -20,6 +20,9 @@ The users include undergraduates, graduates, research technicians, post-docs, pr
 
 ### Usecases
 Objective: The user intends to understand the effect of gene expression of their target gene in the prescence of competitor gRNAs that use up the CRISPRa-resources.
+
+*Follow Tutorial in Jupyter notebook for example*
+
 1. Install package and initialize CRISPRa biochemical model
 2. Decide number of competitor guides
 3. Plot I/O response

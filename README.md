@@ -1,8 +1,8 @@
 # CRISPRaiCircuitsModeling
-Package for modeling CRISPRai large scale genetic circuits and visualizing I/O responses for experimental perturbations
+Package for modeling CRISPRa genetic circuit behavior in the prescence of competing gRNAs for multi-gene programming
 
 # Overview
-Biomolecular interactions are hard to predict in CRISPRai-based genetic circuits due to resource management, and the indirect effect of gRNAs on each other. This reduces predictability of designing large genetic circuit
+Gene regulatory networks (GRNs) comprise complex interactions that are hard to predict in CRISPRa genetic circuits due to gRNA competition for CRISPRa machinery. This issue reduces predictability of designing large genetic circuit for multi-gene metabolic programming
 
 ## Scope
 
