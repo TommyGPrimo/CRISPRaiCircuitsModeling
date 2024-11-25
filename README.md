@@ -7,8 +7,9 @@ Biomolecular interactions are hard to predict in CRISPRai-based genetic circuits
 ## Scope
 
 *Version 1.0*
-- Build CRISPRa biochemical genetic circuit implementation for modality one and modality two: tethered CRISPRa and gRNA guided CRISPRa and interactions for changing parameters
+- Build CRISPRa biochemical genetic circuit implementation for modality Two: gRNA guided CRISPRa and interactions for changing parameters
 - Deliverable: Bioengineering 537 Computational biology, End of Autumn 2024.
+    - Working, downloadable model for checking resources, changing resources, and plotting I/O responses
 
 *Version 1.1*
 - Integrate experimental kinetic data for modality two interactions for potential autoregulator work
