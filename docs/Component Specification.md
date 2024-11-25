@@ -1,5 +1,5 @@
 # Component Specification
-This section contains software component specification for displaying data, managing data, inputs required and outputs provided, as well as interactions to accomplish use cases.
+The component specification for displaying and managing data, inputs required and outputs provided, as well as interactions to accomplish use cases.
 ## Software components
 
 ### Class

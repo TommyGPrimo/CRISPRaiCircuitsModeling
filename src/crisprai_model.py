@@ -1,14 +1,15 @@
 
+# Tommy G. Primo, Fall 2024
+
 # Import functions
 import tellurium as te
 import numpy as np
 import matplotlib.pyplot as plt
 
-import logging
 
-# Define CRISPRai model class
+
 class crisprai_model:
-    
+
     global CRISPRai_modality_one
     
     def __init__(self):
@@ -94,7 +95,7 @@ class crisprai_model:
         rm = te.loada(reduced_model)
         rm_data = rm.simulate(0,8,2000)
         rm.plot(title="CRISPRa Modality I Model", xlabel= "Time (sec)", ylabel= "Concentration")
-        rm_data
+        return rm_data
         
 
     def changeMachineryConcentration(dCas9=1, Activator=1, *args):

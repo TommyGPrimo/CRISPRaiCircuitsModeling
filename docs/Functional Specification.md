@@ -1,42 +1,34 @@
 # Functional specification
 
 ## Background
-CRISPR-based activation and interference (CRISPRai) allows bioengineers to regulate metabolism by up-regulating and down-regulating gene expression based on guide-RNA (gRNA) targeting.
-In order to build large-scale genetic circuits for biological design towards desired phenotypical responses:
+CRISPR-based activation and interference (CRISPRai) allows bioengineers to up-regulate and down-regulate gene expression to control metabolism via gRNA targeting within gene-circuits. In order to build predictable large-scale genetic circuits researchers need to predictable modeling of gene expression by controlling concentrations of dCas9, Activator-complex, and gRNAs in the prescence of competitor gRNAs that use up protein resources
 
-1. understanding and modeling the effects of multiple gRNA interactions is important for predictability
-2. Having a tool for plotting I/O responses, allows for easier experimental design
-3. understanding the modulation effects of CRISPRai-machinery allows for selecting the proper promoters for controlling their expression
-
-### Tool
-The tool runs a biochemical model of gRNA interactions with CRISPRai machinery, and plots the response of experimental inputs towards their target gene output.
+### The Tool
+This biochemical tool models gRNA interactions for CRISPRa-machinery and allows researcher to modulate components and view I/O response of gene expression.
+1. First the user specifies which type of CRISPRa model they want, either fused-CRISPR-activation or RNA guided CRISPR-activation to construct the appropriate CRISPRa model for continuation, plots time-components and prints concentration of machinery parameters
+2. Second the user modifies concentrations to view changes and comparison-plots for gene expression response
 
 ## User profile
 The target users are researchers and bioengineers who are involved in building genetic circuits, specifically CRISPR-based genetic circuits with an emphasis on CRISPRai.
 The users include undergraduates, graduates, research technicians, post-docs, principal investigators, scientists, and even hobbyists without lab access
 
 ### Skills and Access
-- User should have a basic understanding of python
-- User should have a basic understanding of python pckage installation such as `pip install`
+- User should have a beginner to intermediate python programming skills
+- User should have a basic understanding of python package installation such as `pip install` or Jupyter Notebook
 - User should have a basic understanding of basic [CRISPR-based activation and interference technology](https://www.synthego.com/guide/crispr-methods/crispri-crispra)
 - User should have a basic understanding of [Principles of genetic circuits](https://www.nature.com/articles/nmeth.2926)
 
 ### Usecases
-1. The user intends to understand the expression of their target gene based on the number of gRNA competitors in the system
-2. The user intends to understand the expression of their target gene based on regulating the expression of CRISPRai machinery, primarily dCas9 and Activator-protein
+Objective: The user intends to understand the effect of gene expression of their target gene in the prescence of competitor gRNAs that use up the CRISPRa-resources.
+1. Install package and initialize CRISPRa biochemical model
+2. Decide number of competitor guides
+3. Plot I/O response
+4. Change CRISPRa-machinery concentrations, *When changing machinery inputing array allows you to compare I/O response of different concentrations*
+5. Plot I/O response again
 
 ### Expectation
-1. The user should expect an I/O plot describing the expression of target gene based on changing the expression of their CRISPRai machinery
+1. The user should expect an I/O plot describing the expression of target gene based on changing the concentrations of their CRISPRa-machinery to influence experimental design
 2. The user should expect the I/O plot to change depending when changing different parameters to understand underlying circuit changes.
-
-# Getting Started
-*The package is best used in through a Jupyter notebook*
-
-1. Install the CRISPRai genetic circuits python package by `pip install crisrai_model`
-2. Import the package using `from crisprai_model import crisprai_model as cai`
-3. Initialize the instance: `cai_genetic_circuit = cai()`
-3. Run the model object `cai.checkGeneticCircuitComponents()` to see the default CRISPRai genetic circuit components and parameter values
-4. Run the default model using `cai.simulateGeneticCircuit()`
 
 ## Design Genetic circuit to model
 Desiging the genetic circuit to model involves a 3 step process
