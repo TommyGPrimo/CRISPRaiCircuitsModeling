@@ -4,7 +4,7 @@
 # Imports
 import unittest
 
-class TestFunctions():
+class crisprai_model_test():
     pass
 
 if __name__ == '__main__':
