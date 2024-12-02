@@ -10,14 +10,48 @@ import matplotlib.pyplot as plt
 
 class crisprai_model:
 
-    global CRISPRai_modality_one
+    global model_modality_2
     
     def __init__(self):
         # Define CRISPRa modality two model - scRNA recruited activator protein complex coupled with dCas9
-        
+        model_reactions = """
+        # CRISPRa Modality 2 - dCas9 and RNA recruited activator, double diamond scenario
+
+        R1: d + s -> Ai; p_p*d*s - p_n*Ai # Formation of dCas9 and gRNA torm intermediate activator
+        R2: Ai + r -> A; q_p*Ai*r - q_n*A # Formation of complete activator
+        R3: c -> Y; kappa*c
+
+        R4: Y -> ; gam*Y;
+        R5: s -> ; del*s;
+
+
+        # Initial concentrations values
+        d = 1
+        s = 5
+        D = 1
+
+
+        # Kinetic parameters
+        ki_1 = 1;
+        ki_2 = 2;
+        li_1 = 1;
+        li_2 = 2;
+        kappa = 1;
+        gam = 1;
+        del = 1;
+        """
         print("Module built")
         
-    def defineModalityTwoGeneticCircuit():
+    def changeCRISPRaMachineryConcentration(dCas9=1, Activator=1, targetGuide=1):
+        
+        """ChangeCRISPRMachineryConcentration - This function allows user to change the concentration of each CRISPRa machinery and view their effect on gene expression
+
+        Args:
+            dCas9 (int, optional): dCas9 Protein concentration. Defaults to 1.
+            Activator (int, optional): MCP-SoxS transcriptional activator complex concentration. Defaults to 1.
+            targetGuide (int, optional): scRNA guide targeting your desired gene for activation. Defaults to 1.
+        """
+        
         pass
 
     def simulateGeneticCircuits():

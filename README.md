@@ -23,4 +23,12 @@ Gene regulatory networks (GRNs) comprise complex interactions that are hard to p
 ## srcs
 The source folder contains the main code for running this package, including unit tests and helper python scripts
 
-
+## Getting Started
+1. Install package using `pip install crisprai_model`
+2. Initialize a CRISPRa object module.
+    1. This constructs the Tellurium model for managing all CRISPRa components from d
+    2. Plot mechanistic reaction
+3. Define number of competing gRNAs and define type as either scRNA or sgRNA, allow plotting
+    1. Default at 0 guides
+    2. Plots mechanistic reaction
+4. 
