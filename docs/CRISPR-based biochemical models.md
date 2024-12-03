@@ -1,9 +1,7 @@
-# CRISPR-based biochemical models
-The ordinary differential equations (ODEs) used to generate the models in this package are referenced below. Originally written in Matlab and converted to tellurium.
-This document briefly explains each biochemical model for ease of understanding each model.
-
-## CRISPRa modality one
-This model of CRISPRa is composed of an activator fused to the dCas9 machinery and allows to model input and output response for controlling concentration of the single machinery complex
+# CRISPRa Model: Modality 1
+This is a CRISPRa model where dCas9 to tether to an activator protein and modeled as a single resource $d$ the scRNA/sgRNA is modeled as $s_i$ where $i \in [1, 2, 3,...N]$ and form an activator complex $A_{1,i}$. <br/>
+The activator complex binds to DNA $D$ to form the transcriptional/translation complex $c_i$. <br/>
+The transcriptional/translational complex $c_i$ produce the protein $Y_i$
 
 **Chemical Reactions**
 1. $R1: d + s_i \xleftrightarrow[k_i^-]{k_i^+}A_{1,i}$
@@ -21,11 +19,9 @@ This model of CRISPRa is composed of an activator fused to the dCas9 machinery a
 3. $\dot{c_i} = {l_i^+}A_{1,i}D_i - {l_i^-} c_i$
 4. $\dot{Y_i} = \kappa c_i - \gamma Y_i$
 
-### dCas9 and DNA
+## dCas9 and DNA
 The total concentration of dCas9 and target DNA in this system is conserved
 - The total concentration of dCas9 is: $d_t = d + \sum_{i=1}^{N}A_{1,i} + \sum_{i=1}^{N}c_i$
 - The total concentration of DNA is: $D_{it} = D_i + c_i$
 
-
-## CRISPRa modality two
-
+*The total concentration for both is the accumulation of all complexes that use these components*
