@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 class crisprai_model:
     
-    def create_model():
+    def create_model(self):
         # Define CRISPRa modality two model - scRNA recruited activator protein complex coupled with dCas9
         model = """
         # CRISPRa Modality 1 - dCas9 tethered to activator model
