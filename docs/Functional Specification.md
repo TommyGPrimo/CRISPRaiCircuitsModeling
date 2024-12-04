@@ -33,7 +33,7 @@ Objective: The user intends to understand the effect of gene expression with cha
 1. The user should expect an I/O plot describing the expression of target gene based on changing the concentrations of their CRISPRa-machinery to influence experimental design
 2. The user should expect the I/O plot to change depending when changing different parameters to understand underlying circuit changes.
 
-## Design Genetic circuit to model
+## Getting Started
 Desiging the genetic circuit to model involves a 3 step process
 1. Changing the CRISPRai machinery resources using `cai.changeMachineryConcentration(dCas9=1, Activator=1)` to any numerical value
 2. Setting your competitor genetic circuit number which consumes your machinery resources `cai.setCompetitorCircuits(value=1)`
@@ -43,7 +43,7 @@ Desiging the genetic circuit to model involves a 3 step process
 *Different inducers may express at different ranges, here you can change the inducer range and replot*
 1. Change the inducer range using `cai.changeInputResponseRange(responseRange)` where the `responseRange` is an array of two elements, a lower and upper bound, i.e. `[10E-8,10E8]`
 2. Check changed parameters `cai.checkGeneticCircuitComponents()`
-3. Simulate the biochemical model `cai.simulateGeneticCircuit()` for an I/O plot of steady state levels
+3. Simulate the biochemical model `cai.visualize_io_response()` for an I/O plot of steady state levels
 
 ## Note
 *Each simulation resets through tellurium*

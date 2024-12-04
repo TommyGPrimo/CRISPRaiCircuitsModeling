@@ -1,24 +1,21 @@
 # CRISPRaiCircuitsModeling
-Package for modeling CRISPRa genetic circuit behavior in the prescence of competing gRNAs for multi-gene programming
-
-# Overview
-Gene regulatory networks (GRNs) comprise complex interactions that are hard to predict in CRISPRa genetic circuits due to gRNA competition for CRISPRa machinery. This issue reduces predictability of designing large genetic circuit for multi-gene metabolic programming
+Package for modeling CRISPRa behavior and mainly seeing the I/O response to comparisons between CRISPRa-complexes
 
 ## Scope
 
 *Version 1.0*
-- Build CRISPRa biochemical genetic circuit implementation for modality Two: gRNA guided CRISPRa and interactions for changing parameters
+- Build CRISPRa biochemical genetic circuit implementation of tethered complexes: gRNA guided CRISPRa and interactions for changing parameters
 - Deliverable: Bioengineering 537 Computational biology, End of Autumn 2024.
     - Working, downloadable model for checking resources, changing resources, and plotting I/O responses
 
 *Version 1.1*
-- Integrate experimental kinetic data for modality two interactions for potential autoregulator work
+- changing kinetics
+- implementation of RNA-guided CRISPRa complexes
 
 # Folders
 ## Docs
 - Functional Specification: Document contains background of package, problem being addressed, user profile and use cases
 - Component Specification: Document contains software components, high level description of data and provisions, interactions to accomplish the use cases and preliminary plan
-- Biochemical Equations: Document contains the biochemical equations used to structure the CRISPRai genetic circuits.
 
 ## srcs
 The source folder contains the main code for running this package, including unit tests and helper python scripts
