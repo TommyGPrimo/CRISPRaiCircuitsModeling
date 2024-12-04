@@ -43,6 +43,14 @@ class crisprai_model:
         """
         return model
     
+    def change_concentration_of_machinery(self,model,dcas_9=2,guide=2,complex=0,target=6):
+        model.d=dcas_9
+        model.s = guide
+        model.A = complex
+        model.D = target
+        
+        # Reset here?
+
     def simulate_crispra_model(self, model, time):
         m = te.loada(model)
         mm = m.simulate(0,time,2000)
@@ -84,7 +92,7 @@ class crisprai_model:
         return [rm,rm_data]
     
     def plot_io_model(self,io):
-        io.plot(title="CRISPRa tethered Model", xlabel= "Time (sec)", ylabel= "Concentration")
+        io.plot(title="CRISPRa IO Model", xlabel= "Time (sec)", ylabel= "Concentration")
     
     # Define function to change steady state values with changing inducer for io plotting
     def change_steady_state_values(self,tellurium_model, inducer_concentrations, steady_state_protein_list):
