@@ -44,6 +44,19 @@ class crisprai_model:
         return model
     
     def change_concentration_of_machinery(self,model,dcas_9=2,guide=2,complex=0,target=6, time=10):
+        """Changing the concentration of the CRISPRa machinery components
+
+        Args:
+            model (_type_): The tellurium model to adjust and visualize behavior
+            dcas_9 (int, optional): dCas9 protein. Defaults to 2.
+            guide (int, optional): scRNA guide for DNA targeting. Defaults to 2.
+            complex (int, optional): Complex of dCas9 and guide together. Defaults to 0.
+            target (int, optional): The reporter gene target. Defaults to 6.
+            time (int, optional): time for seeing behavior. Defaults to 10.
+
+        Returns:
+            _type_: tellurium model
+        """
         model.reset()
         model.d=dcas_9
         model.s = guide

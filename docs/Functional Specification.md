@@ -19,7 +19,7 @@ The users include undergraduates, graduates, research technicians, post-docs, pr
 - User should have a basic understanding of [Principles of genetic circuits](https://www.nature.com/articles/nmeth.2926)
 
 ### Usecases
-Objective: The user intends to understand the effect of gene expression of their target gene in the prescence of competitor gRNAs that use up the CRISPRa-resources.
+Objective: The user intends to understand the effect of gene expression with changing CRISPRa components and at what concentration to use and inducer to reach saturation of a protein
 
 *Follow Tutorial in Jupyter notebook for example*
 
