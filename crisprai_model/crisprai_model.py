@@ -44,14 +44,14 @@ class crisprai_model:
         return model
     
     def change_concentration_of_machinery(self,model,dcas_9=2,guide=2,complex=0,target=6):
+        model.reset()
         model.d=dcas_9
         model.s = guide
         model.A = complex
         model.D = target
-        
-        # Reset here?
+        self.simulate_crispra_model(model=model)
 
-    def simulate_crispra_model(self, model, time):
+    def simulate_crispra_model(self, model, time=10):
         m = te.loada(model)
         mm = m.simulate(0,time,2000)
         return [m,mm]
