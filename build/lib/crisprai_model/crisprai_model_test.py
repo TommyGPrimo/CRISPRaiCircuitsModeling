@@ -5,11 +5,6 @@
 import unittest
 from crisprai_model import crisprai_model as cai
 
-class crisprai_model_test(unittest.TestCase):
-    
-    def test_crisprai_model(self):
-        self.assertEquals()
-    
 # Initialize the package and model
 cai_circuit = cai()
 cai_model = cai_circuit.get_crispra_model() # Test this by making sure you get a string returned

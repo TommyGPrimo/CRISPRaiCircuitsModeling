@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CRISPRaiCircuitsModeling.egg-info/PKG-INFO
+CRISPRaiCircuitsModeling.egg-info/SOURCES.txt
+CRISPRaiCircuitsModeling.egg-info/dependency_links.txt
+CRISPRaiCircuitsModeling.egg-info/top_level.txt
+crisprai_model/__init__.py
+crisprai_model/crisprai_model.py
+crisprai_model/crisprai_model_test.py

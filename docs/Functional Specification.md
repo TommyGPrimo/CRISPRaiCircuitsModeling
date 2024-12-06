@@ -23,21 +23,22 @@ Objective: The user intends to understand the effect of gene expression with cha
 
 *Follow Tutorial in Jupyter notebook for example*
 
-1. Install package and initialize CRISPRa biochemical model
-2. Decide number of competitor guides
-3. Plot I/O response
-4. Change CRISPRa-machinery concentrations, *When changing machinery inputing array allows you to compare I/O response of different concentrations*
-5. Plot I/O response again
+# Getting Started
+1. Install package using `pip install -i https://test.pypi.org/simple/ CRISPRaiCircuitsModeling`
+2. Create package `import crisprai_model as cai`
+3. Define crisprai genetic circuit `cai_circuit = cai()` and get the model `cai_model = cai_circuit.get_crisprai_model()`
+4. define the model simulation `cai_simulation = cai_circuit.simulate_crispra_model(cai_model, time=8)` where `8` can be any time needed
+5. Plot simulation `cai_circuit.plot_crispra_model(cai_simulation[0])`
+6. Change machinery concentrations `updated_model = cai_circuit.change_concentration_of_machinery(cai_simulation[0], dcas_9=2, guide=1, target=1)`
+7. Plot new simulation `cai_circuit.plot_crispra_model(updated_model)`
+8. Define the I/O response model `io_model = cai_circuit.get_io_model()`
+9. Define the I/O simulation `io_simulation = cai_circuit.simulate_io_model(io_model)`
+10. Plot the I/O response: `cai_circuit.visualize_io_response(io_simulation[0], 8, [10,1000]) `
+    1. Change the last argument to see differences in complex concentration differences `[10,1000]` means 100x difference in concentration
 
 ### Expectation
 1. The user should expect an I/O plot describing the expression of target gene based on changing the concentrations of their CRISPRa-machinery to influence experimental design
 2. The user should expect the I/O plot to change depending when changing different parameters to understand underlying circuit changes.
-
-## Getting Started
-Desiging the genetic circuit to model involves a 3 step process
-1. Changing the CRISPRai machinery resources using `cai.changeMachineryConcentration(dCas9=1, Activator=1)` to any numerical value
-2. Setting your competitor genetic circuit number which consumes your machinery resources `cai.setCompetitorCircuits(value=1)`
-3. Simulating the biochemical model for the genetic circuit: `cai.simulateGeneticCircuit()` for an I/O plot of steady state levels
 
 ## Changing Inducer ranges
 *Different inducers may express at different ranges, here you can change the inducer range and replot*
