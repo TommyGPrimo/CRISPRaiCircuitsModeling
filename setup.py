@@ -12,7 +12,7 @@ short_description = 'A CRISPRai modeling package for modeling large-scale geneti
 
 setup(
         name='CRISPRAICIRCUITMODELING',
-        version= '0.0.2',
+        version= '0.0.1',
         author= 'Tommy G. Primo',
         author_email= 'tprimo@uw.edu',
         url='https://github.com/TommyGPrimo/CRISPRaiCircuitsModeling',
